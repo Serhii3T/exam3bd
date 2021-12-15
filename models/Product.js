@@ -1,0 +1,9 @@
+const { Schema, model, Types } = require('mongoose');
+
+const schema = new Schema({
+  titleProduct: { type: String},
+  priceProduct: { type: Number},
+  colorProduct: { type: String},
+})
+
+module.exports = model('Product', schema);
