@@ -3,7 +3,7 @@ const express = require("express");
 // connection mogoose
 const mongoose = require("mongoose");
 // connect dotenv
-require("dotenv").config(); // for for access process.env
+require("dotenv").config(); // for access process.env
 // import cors
 const cors = require("cors");
 
@@ -21,6 +21,7 @@ app.use(express.json({ extended: true }));
 app.use("/api/auth", require("./routes/auth.route"));
 // -- basket route
 app.use("/api/product", require("./routes/product.route"));
+
 
 // create a function in which we will connect to the database
 async function start() {

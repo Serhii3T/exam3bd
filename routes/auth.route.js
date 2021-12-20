@@ -11,7 +11,7 @@ const {check, validationResult} = require('express-validator');
 const bcrypt = require('bcryptjs');
 // import jsonwebtoken for create token
 const jwt = require('jsonwebtoken');
-const Product = require('../models/Product');
+
 // Post request registation
 router.post('/registration',
     // connect middleware
@@ -60,7 +60,7 @@ router.post('/registration',
             console.log(err)
         }
     })
-// Post request registation
+// Post request login
 router.post('/login',
     // connect middleware
     [
